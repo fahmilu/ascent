@@ -315,6 +315,10 @@ strong {
 		font-size: 20px;
 		font-weight: 400;
 		margin: 0 10px;
+
+		@include media-breakpoint-down(md) {
+			font-size: 14px;
+		}
 	}
 }
 
@@ -667,13 +671,15 @@ hr{
 
 //TEAM
 .team-wrap{
-	padding: 30px 20px;
 	// border: 1px solid rgba(255,255,255,.1);
+	padding: 0;
 	background: darken($darken, 2%);
 	width: 100%;
 	margin-bottom: 0;
 	.text{
-		width: calc(100% - 120px);
+		padding: 0 20px;
+
+		width: calc(100% - 100px);
 		@include transition(.3s);
 		h3{
 			font-weight: 500;
@@ -692,8 +698,8 @@ hr{
 		}
 	}
 	.img{
-		width: 100px;
-		height: 100px;
+		width: 120px;
+		height: 120px;
 		// border-radius: 50% 0 50% 50%;
 		opacity: 1;
 		@include transition(.5s);

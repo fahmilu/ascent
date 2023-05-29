@@ -8465,6 +8465,9 @@ strong {
   font-size: 20px;
   font-weight: 400;
   margin: 0 10px; }
+  @media (max-width: 767.98px) {
+    #Sector .badge {
+      font-size: 14px; } }
 
 #Contact h2.contact a, #Contact .contact.h2 a {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
@@ -8736,12 +8739,13 @@ hr {
     font-size: 24px; }
 
 .team-wrap {
-  padding: 30px 20px;
+  padding: 0;
   background: #1e1f43;
   width: 100%;
   margin-bottom: 0; }
   .team-wrap .text {
-    width: calc(100% - 120px);
+    padding: 0 20px;
+    width: calc(100% - 100px);
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -8756,8 +8760,8 @@ hr {
   .team-wrap:hover h3, .team-wrap:hover .h3 {
     text-decoration: underline; }
   .team-wrap .img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     opacity: 1;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
