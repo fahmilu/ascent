@@ -146,7 +146,11 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-9">
-                    <h2 class="text-center sector">MSME Enablers, Next Gen Financial Service, Neo Consumer</h2>
+                    <div class="d-flex justify-content-center g-2">
+                        <span class="badge rounded-pill">MSME Enablers</span>
+                        <span class="badge rounded-pill">Next Gen Financial Service</span>
+                        <span class="badge rounded-pill">Neo Consumer</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -287,7 +291,7 @@
                     <h2 class="mb-4">Portfolio</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center featured">
                 <div class="col-xl-9">
                     <ul class="list-featured">
                         <li data-aos="fade-up">
@@ -360,6 +364,8 @@
                                 <h3>Beleaf Farms</h3>
                             </a>
                         </li>
+                    </ul>
+                    <ul class="list-featured list-featured-hidden" id="hiddenFeatured">
                         <li data-aos="fade-up">
                             <a href="https://proglix.com/" target="_blank">
                                 <h3>Proglix</h3>
@@ -441,6 +447,9 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="text-center pt-5" data-aos="fade-up">
+                        <a href="#" onClick="getElementById('hiddenFeatured').style.display = 'block'; this.style.display = 'none'; return false;" class="see-more-featured">See More</a>
+                    </div>
                 </div>
             </div>
         </div>

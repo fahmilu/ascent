@@ -8459,13 +8459,17 @@ strong {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+#Sector .badge {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 10px; }
 
 #Contact h2.contact a, #Contact .contact.h2 a {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
-  #Contact h2.contact a:hover, #Contact .contact.h2 a:hover {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #8fb2e6 98%), linear-gradient(25deg, #b25959 23%, #fff 60%); }
 
 @keyframes bounce {
   50% {
@@ -8732,7 +8736,7 @@ hr {
     font-size: 24px; }
 
 .team-wrap {
-  padding: 20px;
+  padding: 30px 20px;
   background: #1e1f43;
   width: 100%;
   margin-bottom: 0; }
@@ -8752,20 +8756,18 @@ hr {
   .team-wrap:hover h3, .team-wrap:hover .h3 {
     text-decoration: underline; }
   .team-wrap .img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50% 0 50% 50%;
+    width: 100px;
+    height: 100px;
     opacity: 1;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-  .team-wrap:hover .text {
-    width: calc(100% - 150px); }
+    transition: all 0.5s ease;
+    filter: grayscale(1); }
   .team-wrap:hover .img {
     opacity: 1;
-    border-radius: 0 50% 50% 50%; }
+    filter: grayscale(0); }
 
 .about-author .img {
   width: 100px;
@@ -9352,6 +9354,17 @@ hr {
           color: #fff;
           background: black; }
 
+.featured {
+  transition: all ease-in-out .5s; }
+
+.see-more-featured {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline !important;
+  font-weight: 600; }
+  .see-more-featured:hover {
+    color: red; }
+
 .list-featured {
   padding: 0;
   -webkit-columns: 2;
@@ -9360,14 +9373,17 @@ hr {
   list-style: none; }
   @media (min-width: 768px) {
     .list-featured {
-      -webkit-columns: 3;
-      -moz-columns: 3;
-      columns: 3;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
       -webkit-column-gap: 9.4%;
       -moz-column-gap: 9.4%;
       column-gap: 9.4%; } }
+  .list-featured.list-featured-hidden {
+    display: none; }
   .list-featured li {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
     .list-featured li a h3, .list-featured li a .h3 {
       transition: all ease-in-out .25s;
       font-weight: 600;
@@ -9375,7 +9391,7 @@ hr {
       @media (min-width: 1200px) {
         .list-featured li a h3, .list-featured li a .h3 {
           letter-spacing: 3px;
-          font-size: 36px; } }
+          font-size: 40px; } }
       @media (max-width: 767.98px) {
         .list-featured li a h3, .list-featured li a .h3 {
           font-size: 18px; } }
