@@ -218,19 +218,15 @@ strong {
 		position: relative;
 	}
 	.ornamen {
-		position: absolute;
-		width: auto;
-		height: 140%;
-		top: 50%;
-		left: 0;
-		transform: translate(-50%, -50%);
-		img {
-			@include media-breakpoint-up(xl){
-				width: auto;
-				height: 100%;
-				display: block;
-				object-position: left center;
-			}
+		display: none;
+		@include media-breakpoint-up(xl){
+			position: absolute;
+			width: auto;
+			height: 140%;
+			top: 50%;
+			left: 0;
+			transform: translate(-50%, -50%);
+			display: block;
 		}
 	}
 }
@@ -1537,20 +1533,7 @@ hr{
 }
 .list-featured {
 	padding: 0;
-	// @include media-breakpoint-up(sm) {
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		columns: 2;
-	// }
-
-	@include media-breakpoint-up(md) {
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		columns: 2;
-		-webkit-column-gap: 1rem;
-		-moz-column-gap: 1rem;
-		column-gap: 1rem;
-	}
+	margin-bottom: 0;
 
 	list-style: none;
 

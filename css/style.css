@@ -8385,18 +8385,16 @@ strong {
 #AboutUs .container {
   position: relative; }
 #AboutUs .ornamen {
-  position: absolute;
-  width: auto;
-  height: 140%;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%); }
+  display: none; }
   @media (min-width: 1200px) {
-    #AboutUs .ornamen img {
+    #AboutUs .ornamen {
+      position: absolute;
       width: auto;
-      height: 100%;
-      display: block;
-      object-position: left center; } }
+      height: 140%;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      display: block; } }
 
 .ftco-intro {
   padding: 0 !important;
@@ -9378,18 +9376,8 @@ hr {
 
 .list-featured {
   padding: 0;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
+  margin-bottom: 0;
   list-style: none; }
-  @media (min-width: 768px) {
-    .list-featured {
-      -webkit-columns: 2;
-      -moz-columns: 2;
-      columns: 2;
-      -webkit-column-gap: 1rem;
-      -moz-column-gap: 1rem;
-      column-gap: 1rem; } }
   .list-featured.list-featured-hidden {
     display: none; }
   .list-featured li {
