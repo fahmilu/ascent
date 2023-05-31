@@ -8382,20 +8382,21 @@ strong {
     color: #aaaaaa;
     line-height: 0; }
 
+#AboutUs .container {
+  position: relative; }
 #AboutUs .ornamen {
-  position: relative;
-  width: 100%;
-  height: 100%; }
-  #AboutUs .ornamen:before {
-    content: ''; }
-    @media (min-width: 1200px) {
-      #AboutUs .ornamen:before {
-        position: absolute;
-        top: 20px;
-        width: 100%;
-        height: 100%;
-        background: url("/images/ornamen.png") right top no-repeat;
-        background-size: auto 70%; } }
+  position: absolute;
+  width: auto;
+  height: 140%;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%); }
+  @media (min-width: 1200px) {
+    #AboutUs .ornamen img {
+      width: auto;
+      height: 100%;
+      display: block;
+      object-position: left center; } }
 
 .ftco-intro {
   padding: 0 !important;
@@ -8409,28 +8410,29 @@ strong {
     height: 100%;
     top: 0;
     left: 0;
-    background: url("/test.svg") center no-repeat;
-    background-size: cover; }
+    background: url("/images/1HeroBG.svg") center no-repeat;
+    background-size: auto 80%; }
+    @media (max-width: 575.98px) {
+      .ftco-intro::before {
+        background-size: auto 100%;
+        background-position: right center; } }
   .ftco-intro .container {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 900px;
     display: flex;
     align-items: center; }
   .ftco-intro h1, .ftco-intro .h1 {
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 50px;
-    margin: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    margin: 0; }
     .ftco-intro h1 strong, .ftco-intro .h1 strong {
-      text-decoration: underline;
-      font-weight: 500; }
+      font-weight: 400; }
     .ftco-intro h1 span, .ftco-intro .h1 span {
       text-decoration: underline; }
     @media (max-width: 575.98px) {
       .ftco-intro h1, .ftco-intro .h1 {
-        font-size: 30px; } }
+        font-size: 36px; } }
   .ftco-intro .text {
     position: relative; }
     .ftco-intro .text .icon-scroll {
@@ -8728,15 +8730,17 @@ hr {
   background: rgba(255, 255, 255, 0.3); }
 
 .services-wrap {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   @media (max-width: 575.98px) {
     .services-wrap {
       margin-bottom: 10px; } }
-  .services-wrap .icon span {
-    font-size: 60px;
-    color: #fff; }
-  .services-wrap .text h3, .services-wrap .text .h3 {
-    font-size: 24px; }
+  .services-wrap .image img {
+    display: block;
+    height: 60px;
+    margin-bottom: 40px; }
+  .services-wrap .text h4, .services-wrap .text .h4 {
+    font-size: 20px; }
 
 .team-wrap {
   padding: 0;
@@ -9380,21 +9384,21 @@ hr {
       -webkit-columns: 2;
       -moz-columns: 2;
       columns: 2;
-      -webkit-column-gap: 9.4%;
-      -moz-column-gap: 9.4%;
-      column-gap: 9.4%; } }
+      -webkit-column-gap: 1rem;
+      -moz-column-gap: 1rem;
+      column-gap: 1rem; } }
   .list-featured.list-featured-hidden {
     display: none; }
   .list-featured li {
     margin-bottom: 20px;
-    text-align: center; }
+    text-align: left; }
     .list-featured li a h3, .list-featured li a .h3 {
       transition: all ease-in-out .25s;
-      font-weight: 600;
-      letter-spacing: 1px; }
+      font-weight: 500;
+      letter-spacing: 0.025em; }
       @media (min-width: 1200px) {
         .list-featured li a h3, .list-featured li a .h3 {
-          letter-spacing: 3px;
+          letter-spacing: 0.025em;
           font-size: 40px; } }
       @media (max-width: 767.98px) {
         .list-featured li a h3, .list-featured li a .h3 {
