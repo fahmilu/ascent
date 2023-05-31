@@ -8423,11 +8423,14 @@ strong {
     align-items: center; }
   .ftco-intro h1, .ftco-intro .h1 {
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 50px;
-    margin: 0; }
+    margin: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
     .ftco-intro h1 strong, .ftco-intro .h1 strong {
-      font-weight: 400; }
+      font-weight: 500; }
     .ftco-intro h1 span, .ftco-intro .h1 span {
       text-decoration: underline; }
     @media (max-width: 575.98px) {
@@ -9394,7 +9397,7 @@ hr {
     text-align: left; }
     .list-featured li a h3, .list-featured li a .h3 {
       transition: all ease-in-out .25s;
-      font-weight: 500;
+      font-weight: 400;
       letter-spacing: 0.025em; }
       @media (min-width: 1200px) {
         .list-featured li a h3, .list-featured li a .h3 {

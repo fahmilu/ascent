@@ -264,15 +264,15 @@ strong {
 	}
 	h1{
 		color: $white;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 50px;
 		margin: 0;
-		// background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
-		// -webkit-background-clip: text;
-		// -webkit-text-fill-color: transparent;
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0) 56%, #b25959 98%), linear-gradient(25deg, #8fb2e6 23%, #fff 60%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		strong {
 			// text-decoration: underline;
-			font-weight: 400;
+			font-weight: 500;
 		}
 		span{
 			text-decoration: underline;
@@ -1564,7 +1564,7 @@ hr{
 
 		a h3 {
 			transition: all ease-in-out .25s;
-			font-weight: 500;
+			font-weight: 400;
 			letter-spacing: 0.025em;
 			@include media-breakpoint-up(xl) {
 				letter-spacing: 0.025em;
